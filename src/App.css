@@ -1,38 +1,139 @@
 .App {
   text-align: center;
+  font-family: Helvetica;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.max-width{
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  padding: 30px 0;
+  font-family: 'Ubuntu',sans-serif;
+  transition: all 0.3s ease;
+  background-color: blueviolet;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar.sticky{
+  padding: 15px 0;
+  background: #f4a261;
+}
+.navbar .max-width{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+.navbar .logo a{
   color: white;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: 'Ubuntu',bold;
+}
+.navbar .logo .scroll a{
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: 'Ubuntu',bold;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar.sticky .logo a{
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: 'Ubuntu',bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar .logo a span{
+  color: #f4a261;
+}
+.navbar.sticky .logo a span{
+  color: white;
+  transition: all 0.3s ease;
+}
+.navbar .menu{
+  margin-right: -600px;
+}
+.navbar .menu li{
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a{
+  display: block;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.2s ease;
+}
+.navbar .menu li a:hover{
+  color:#f4a261;
+}
+.navbar.sticky .menu li a:hover{
+  color: white
+}
+
+
+
+
+
+
+
+.home{
+  display: flex;
+  background: url("Media/20220615_153107.jpg") no-repeat center;
+  height: 100vh;
+  color: white ;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Ubuntu',sans-serif;
+}
+.home .max-width{
+  margin: auto 0 auto 40px;
+}
+.home .home-content .mySign{
+  height: 180px;
+  padding: 10px;
+  border-spacing: 60px;
+}
+.home .home-content .text-1{
+  font-size: 27px;
+}
+.home .home-content .text-2{
+  font-family: 'Great Vibes';
+  font-size: 75px;
+  font-weight: 400;
+  margin-top: 9px;
+  margin-left: -3px;
+}
+.home .home-content .text-3{
+  font-size: 40px;
+  margin: 5px
+}
+.home .home-content .text-3 span{
+  color: #f4a261;
+  font-weight: 500;
+}
+.home .home-content a{
+  display: inline-block;
+  background: #f4a261;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 20px;
+  margin-top: 20px;
+  border-radius: 6px;
+  height: 50px;
+  border: 2px solid #f4a261;
+  transition: all 0.3s ease;
+}
+
+.home .home-content a:hover{
+  color: #f4a261;
+  background: none;
 }
