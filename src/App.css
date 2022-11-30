@@ -14,14 +14,15 @@
   position: fixed;
   z-index: 999;
   width: 100%;
-  padding: 30px 0;
-  font-family: 'Ubuntu',sans-serif;
+  padding: 5px 0;
+  font-size: 20px;
+  font-weight: 600;
   transition: all 0.3s ease;
-  background-color: blueviolet;
+  background-color: #353353;
 }
 .navbar.sticky{
-  padding: 15px 0;
-  background: #f4a261;
+  padding: 5px 0;
+  background: #FFB355;
 }
 .navbar .max-width{
   display: flex;
@@ -30,48 +31,53 @@
 }
 .navbar .logo a{
   color: white;
-  font-size: 35px;
-  font-weight: 600;
-  font-family: 'Ubuntu',bold;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Helvetica;
+  padding-left: 120px;
 }
 .navbar .logo .scroll a{
   color: white;
   font-size: 35px;
-  font-weight: 600;
-  font-family: 'Ubuntu',bold;
+  font-weight: bold;
+  font-family: Helvetica;
 }
 
 .navbar.sticky .logo a{
   color: white;
   font-size: 35px;
-  font-weight: 600;
-  font-family: 'Ubuntu',bold;
+  font-weight: bold;
+  font-family: Helvetica;
 }
 
 .navbar .logo a span{
-  color: #f4a261;
+  color: #FF4C60;
 }
 .navbar.sticky .logo a span{
   color: white;
   transition: all 0.3s ease;
 }
 .navbar .menu{
-  margin-right: -600px;
+  margin-right: -280px;
+}
+.navbar a{
+  text-decoration: none;
 }
 .navbar .menu li{
   list-style: none;
   display: inline-block;
+  margin-left: 15px;
 }
 .navbar .menu li a{
   display: block;
   color: white;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: bold;
   margin-left: 25px;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-  color:#f4a261;
+  color:#FFB355;
 }
 .navbar.sticky .menu li a:hover{
   color: white
