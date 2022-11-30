@@ -1,0 +1,90 @@
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+  }
+  .home-container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .home{
+    display: flex;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 90%), url("../Media/20220615_153107.jpg") no-repeat center;
+    height: 100vh;
+    color: white ;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Rubik','Ubuntu',sans-serif;
+  }
+  .hire-btn{
+    background-color: #FF4C60;
+    font-family: 'Rubik';
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    border-color: #FF4C60;
+    border-radius: 60px;
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+  }
+  .socials{
+    margin-top: 35px;
+  }
+  .socials img{
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .face{
+    height:110px;
+    width:110px;
+    margin-top: -50px;
+  }
+  .home .max-width{
+    /* margin: auto 0 auto 40px; */
+  }
+  .home .home-content .text-1{
+    font-size: 27px;
+  }
+  .home .home-content .text-2{
+    font-family: 'Rubik', Helvetica, 'Great Vibes';
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 25px;
+    /* margin-top: 9px;
+    margin-left: -3px; */
+  }
+  .home .home-content .text-3{
+    font-size: 20px;
+    font-family: 'Rubik';
+    font-weight: 500;
+    margin-top: 15px;
+    /* margin: 5px */
+  }
+  .home .home-content .text-3 span{
+    color: #f4a261;
+    font-weight: 500;
+  }
+  .home .home-content a{
+    display: inline-block;
+    background: #f4a261;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    height: 50px;
+    border: 2px solid #f4a261;
+    transition: all 0.3s ease;
+  }
+  
+  .home .home-content a:hover{
+    color: #f4a261;
+    background: none;
+  }
