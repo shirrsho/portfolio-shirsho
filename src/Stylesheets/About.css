@@ -1,0 +1,142 @@
+.about{
+    max-width: 1300px;
+    padding: 0 100px;
+    background-color: #f9f9ff;
+}
+
+.about-content{
+    background-color: #f9f9ff;
+    width: 100%;
+    display: flex;
+    margin-bottom: 100px;
+  }
+
+  .title{
+    font-family: 'Rubik';
+    font-size: 35px;
+    color: #454360;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .aboutface{
+    height: 150px;
+    width: 150px;
+    margin-right: 50px;
+  }
+
+  .column-right{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(216, 216, 216);
+    text-align: justify;
+  }
+
+  .abouttext{
+    font-family: 'Rubik';
+    color: #565378;
+    padding: 30px;
+    display: block;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
+
+  .down, .view{
+    text-decoration: none;
+    background-color: #FF4C60;
+    font-family: 'Rubik';
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 70px;
+    margin-top: 160px;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+
+
+
+
+  .skills .title::before{
+    background: #000;
+    bottom: -1660px;
+}
+.skills .title::after{
+    background: #fff;
+    content: " What I Know ";
+    bottom: -1675px;
+    color: #f4a261;
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: #f4a261;
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #f4a261;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: #f4a261;
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between ;
+}
+.skills .skills-content .right .span{
+    font-weight: 600;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 6px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    left: 0;
+    top:0;
+    background: #f4a261;
+}
+.skills .skills-content .right .java::before{
+    width: 90%;
+}
+.skills .skills-content .right .js::before{
+    width: 10%;
+}
+.skills .skills-content .right .ai::before{
+    width: 95%;
+}
+.skills .skills-content .right .sql::before{
+    width: 50%;
+}

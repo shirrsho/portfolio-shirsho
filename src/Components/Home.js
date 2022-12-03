@@ -16,10 +16,11 @@ function Home() {
                     <img src={require("../Media/github-logo.png")}></img>
                     <img src={require("../Media/facebook-logo.png")}></img>
                 </div>
-                <div>
-                    <button className='hire-btn'>Hire Me</button>
+                    <div>
+                        <button className='hire-btn'>Hire Me</button>
+                    </div>
                 </div>
-                </div>
+                <div class="scroll-ind"/>
             </div>
         </section>
     );

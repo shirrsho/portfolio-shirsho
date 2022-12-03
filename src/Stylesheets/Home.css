@@ -7,11 +7,15 @@
   .home-container{
     display: flex;
     flex-direction: column;
+    margin-top: -10px;
+    text-align: center;
   }
   
   .home{
     display: flex;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 90%), url("../Media/20220615_153107.jpg") no-repeat center;
+    background-color: rgb(53,51,83);
+    /* background: linear-gradient(to bottom, rgba(53,51,83,1) 0%,rgba(53,51,83,1) 90%); */
+    /* url("../Media/20220615_153107.jpg") no-repeat center; */
     height: 100vh;
     color: white ;
     min-height: 500px;
@@ -24,12 +28,14 @@
     font-family: 'Rubik';
     font-weight: bold;
     font-size: 15px;
-    color: white;
-    border-color: #FF4C60;
-    border-radius: 60px;
+    color: #fff;
+    border: none;
+    border-radius: 70px;
     width: 120px;
     height: 40px;
     margin-top: 20px;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
   }
   .socials{
     margin-top: 35px;
@@ -43,7 +49,6 @@
   .face{
     height:110px;
     width:110px;
-    margin-top: -50px;
   }
   .home .max-width{
     /* margin: auto 0 auto 40px; */
@@ -87,4 +92,35 @@
   .home .home-content a:hover{
     color: #f4a261;
     background: none;
+  }
+
+  .scroll-ind {
+    background: transparent;
+    height: 5vh;
+    /* position: relative; */
+    width: 100%;
+    /* padding-bottom: 200px; */
+  }
+  
+  .scroll-ind::before {
+    animation: bounce 2s ease infinite;
+    bottom: 2rem;
+    color: #fff;
+    content: '╲╱';
+    font-size: 1rem;
+    height: 4rem;
+    left: 50%;
+    letter-spacing: -1px;
+    line-height: 4rem;
+    margin-left: -3rem;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    width: 6rem;
+  }
+  
+  @keyframes bounce {
+    50% {
+      transform: translateY(-50%);
+    }
   }
