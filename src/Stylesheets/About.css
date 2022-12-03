@@ -28,8 +28,9 @@
   .column-right{
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgb(216, 216, 216);
+    box-shadow: 0 0 15px rgb(188, 188, 188);
     text-align: justify;
+    display: flex;
   }
 
   .abouttext{
@@ -39,6 +40,8 @@
     display: block;
     letter-spacing: 1px;
     line-height: 30px;
+    text-align: justify;
+    transition: all 0.3s ease;
   }
 
   .down, .view{
@@ -61,13 +64,59 @@
 
 
 
+.abouttext-skills{
+    font-family: 'Rubik';
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 30px;
+    display: block;
+    letter-spacing: 1px;
+    line-height: 30px;
+    background-color: #38364f;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 0 0 15px rgb(188, 188, 188);
+    width: 700px;
+}
 
+.bars{
+    margin-bottom: 15px;
+}
+.info{
+    font-size: 15px;
+    font-weight: normal;
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between ;
+}
 
-  .skills .title::before{
+.line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    left: 0;
+    top:0;
+    background: #FF4C60;
+}
+.java::before{
+    width: 90%;
+}
+.angularjs::before{
+    width: 80%;
+}
+/* .skills .title::before{
     background: #000;
     bottom: -1660px;
-}
-.skills .title::after{
+} */
+/* .skills .title::after{
     background: #fff;
     content: " What I Know ";
     bottom: -1675px;
@@ -139,4 +188,4 @@
 }
 .skills .skills-content .right .sql::before{
     width: 50%;
-}
+} */

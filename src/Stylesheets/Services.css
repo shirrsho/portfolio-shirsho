@@ -1,0 +1,43 @@
+.services{
+    max-width: 1300px;
+    padding: 0 100px;
+    background-color: #f9f9ff;
+}
+
+.all-services{
+    width: 100%;
+    background-color: #f9f9ff;
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+.title{
+    font-family: 'Rubik';
+    font-size: 35px;
+    color: #454360;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.service{
+    width: 300px;
+    height: 250px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(200, 200, 200);
+}
+
+#one{
+    background-color: #6C6CE5;
+}
+#two{
+    background-color: #F9D74C;
+}
+#three{
+    background-color: #F97B8B;
+}
